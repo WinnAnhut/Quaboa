@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label1: UILabel!
     
+    @IBAction func Namebox(_ sender: AnyObject) {
+        
+    }
+    
+    
     var TapCount = 0
 
     @IBAction func buttontap1(_ sender: AnyObject) {
@@ -25,6 +30,7 @@ class ViewController: UIViewController {
         }
         if TapCount >= 20 {
             label1.text = "not a pussy."
+            
         }
         if TapCount >= 30 {
             label1.text = "bueno trabaja!"
