@@ -13,31 +13,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label1: UILabel!
     
-    @IBAction func Namebox(_ sender: AnyObject) {
-        
-    }
     
+    @IBOutlet weak var textbox: UITextField!
     
     var TapCount = 0
 
     @IBAction func buttontap1(_ sender: AnyObject) {
-        label1.text = "UR A PUSSY!"
         TapCount = TapCount + 1
         print(TapCount)
         
-        if TapCount >= 10 {
-            label1.text = "Less of a pussy."
+        label1.text = "Hey " + textbox.text!
+        
+        if TapCount >= 2 {
+            label1.text = "UR A WUSS!"
         }
-        if TapCount >= 20 {
-            label1.text = "not a pussy."
+        
+        if TapCount >= 5 {
+            label1.text = "Less of a wuss."
+        }
+        if TapCount >= 10 {
+            label1.text = "not a wuss."
             
         }
-        if TapCount >= 30 {
-            label1.text = "bueno trabaja!"
+        if TapCount >= 13 {
+            label1.text = "Good for You!"
         }
     }
     
-// Winn ur a god
+// when u push the button the label1 changes by the amount you press and once you press it 30 times it stops changing
     
     override func viewDidLoad() {
         super.viewDidLoad()
